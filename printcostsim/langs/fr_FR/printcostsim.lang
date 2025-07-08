@@ -1,0 +1,42 @@
+# PrintCostSim language file - French
+CHARSET=UTF-8
+
+# Module
+Module50004Name=PrintCostSim
+Module50004Desc=Module de simulation des coûts d'impression avec IA
+
+# General
+PrintCostSim=PrintCostSim
+PrintCostSimSetup=Configuration PrintCostSim
+PrintCostSimSetupPage=Page de configuration du module PrintCostSim
+
+# Statistics
+Statistics=Statistiques
+ActiveMachines=Machines actives
+ActiveConsumables=Consommables actifs
+TotalSimulations=Simulations totales
+
+# Quick Actions
+QuickActions=Actions rapides
+ManageMachines=Gérer les machines
+ManageMachinesDesc=Ajouter, modifier et supprimer les machines d'impression
+ManageConsumables=Gérer les consommables
+ManageConsumablesDesc=Gérer le catalogue des consommables et leurs prix
+ViewSimulations=Voir les simulations
+ViewSimulationsDesc=Consulter l'historique des simulations de coûts
+NewSimulation=Nouvelle simulation
+NewSimulationDesc=Créer une nouvelle simulation de coûts d'impression
+
+# Configuration
+PRINTCOSTSIM_DEFAULT_MARGIN=Marge par défaut (%)
+PRINTCOSTSIM_DEFAULT_MARGINTooltip=Marge bénéficiaire par défaut appliquée aux calculs
+PRINTCOSTSIM_AI_ENABLED=Activer l'IA
+PRINTCOSTSIM_AI_ENABLEDTooltip=Activer les fonctionnalités d'intelligence artificielle
+PRINTCOSTSIM_AUTO_CALC=Calcul automatique
+PRINTCOSTSIM_AUTO_CALCTooltip=Calculer automatiquement les coûts lors des modifications
+
+# Permissions
+Permission50004=Lire les simulations PrintCostSim
+Permission50005=Créer/modifier les simulations PrintCostSim
+Permission50006=Supprimer les simulations PrintCostSim
+

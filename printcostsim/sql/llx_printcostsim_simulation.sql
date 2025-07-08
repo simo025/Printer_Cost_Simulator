@@ -1,0 +1,32 @@
+-- Table des simulations de coûts
+CREATE TABLE @DB_PREFIX@printcostsim_simulation (
+    rowid int(11) NOT NULL AUTO_INCREMENT,
+    ref varchar(128) NOT NULL,
+    label varchar(255) NOT NULL,
+    description text,
+    fk_machine int(11) NOT NULL,
+    quantity int(11) DEFAULT 1,
+    pages_per_document int(11) DEFAULT 1,
+    paper_format varchar(32) DEFAULT 'A4',
+    paper_weight int(11) DEFAULT 80,
+    paper_cost decimal(10,4) DEFAULT 0.0000,
+    print_quality varchar(32) DEFAULT 'normal',
+    color_mode varchar(32) DEFAULT 'color',
+    duplex tinyint(1) DEFAULT 0,
+    margin_percent decimal(5,2) DEFAULT 0.00,
+    total_cost decimal(10,2) DEFAULT 0.00,
+    cost_per_page decimal(10,4) DEFAULT 0.0000,
+    cost_per_document decimal(10,4) DEFAULT 0.0000,
+    ai_optimized tinyint(1) DEFAULT 0,
+    ai_suggestions text,
+    date_creation datetime NOT NULL,
+    tms timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    fk_user_creat int(11),
+    fk_user_modif int(11),
+    import_key varchar(14),
+    status int(11) DEFAULT 1,
+    PRIMARY KEY (rowid),
+    UNIQUE KEY uk_printcostsim_simulation_ref (ref),
+    KEY idx_printcostsim_simulation_machine (fk_machine)
+) ENGINE=InnoDB;
+
